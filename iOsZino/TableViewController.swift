@@ -34,18 +34,11 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        /*
-        let url = URL(string: "http://192.168.43.224:8080/getRecipes")!
-        let task = session.dataTask(with: url) { data, response, error in
-        }*/
         
         let session = URLSession.shared
         
-        // create post request
+        // create get request
         let url = URL(string: "http://192.168.43.224:8080/getRecipes")!
-        
-        // insert json data to the request
-        //request.httpBody = jsonData
         
         let task = session.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else {
@@ -69,6 +62,31 @@ class TableViewController: UITableViewController {
         //cell.detailTextLabel?.text = "Test"
         cell.imageView?.image = UIImage(named: pizza)
         return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        print("C'est censé se produire quand on clique mais ça ne fonctionne pas")
+        
+        var pizzaOrdered: Pizza = pizzeToShow[indexPath.row]
+        
+        let session = URLSession.shared
+        
+        // create get request
+        let url = URL(string: "http://192.168.43.224:8080/sendOrder")!
+        var request = URLRequest(url: url)
+        request.httpMethod = "post"
+        
+        // insert json data to the request
+        //request.httpBody = pizzaOrdered
+        
+        print("Bon, j'y arrive pas, ça m'a saoulé")
+        
+        let task = session.dataTask(with: url) { data, response, error in
+            
+        }
+        
+        task.resume()
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

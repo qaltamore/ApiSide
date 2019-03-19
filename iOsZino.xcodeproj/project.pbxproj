@@ -14,6 +14,9 @@
 		60917D362227E01500496CD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60917D342227E01500496CD4 /* LaunchScreen.storyboard */; };
 		60917D412227E01500496CD4 /* iOsZinoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60917D402227E01500496CD4 /* iOsZinoTests.swift */; };
 		60917D4C2227E01500496CD4 /* iOsZinoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60917D4B2227E01500496CD4 /* iOsZinoUITests.swift */; };
+		60917D592227EB4400496CD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60917D2F2227E01300496CD4 /* Main.storyboard */; };
+		60917D5A2227EB4400496CD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60917D2F2227E01300496CD4 /* Main.storyboard */; };
+		60917D632228331700496CD4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60917D622228331700496CD4 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		60917D472227E01500496CD4 /* iOsZinoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOsZinoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		60917D4B2227E01500496CD4 /* iOsZinoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOsZinoUITests.swift; sourceTree = "<group>"; };
 		60917D4D2227E01500496CD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60917D622228331700496CD4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				60917D322227E01500496CD4 /* Assets.xcassets */,
 				60917D342227E01500496CD4 /* LaunchScreen.storyboard */,
 				60917D372227E01500496CD4 /* Info.plist */,
+				60917D622228331700496CD4 /* TableViewController.swift */,
 			);
 			path = iOsZino;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60917D5A2227EB4400496CD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60917D592227EB4400496CD4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +265,7 @@
 			files = (
 				60917D2E2227E01300496CD4 /* ViewController.swift in Sources */,
 				60917D2C2227E01300496CD4 /* AppDelegate.swift in Sources */,
+				60917D632228331700496CD4 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
